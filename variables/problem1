@@ -1,0 +1,8 @@
+# Create a variable named pi and store 22/7
+pi = 22 / 7
+
+# Print the value
+print("Value of pi:", pi)
+
+# Check the data type
+print("Data type of pi:", type(pi))
