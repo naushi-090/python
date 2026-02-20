@@ -1,0 +1,6 @@
+# Trying to create a variable named 'for'
+for = 4
+
+print(for)
+#for is a reserved keyword in Python.
+#It is used to create loops (for example: for i in range(5):).
