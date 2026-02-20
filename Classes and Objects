@@ -1,0 +1,58 @@
+class Avenger:
+    def __init__(self, name, age, gender, super_power, weapon, leader=False):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.super_power = super_power
+        self.weapon = weapon
+        self.leader = leader
+
+    # Method to display superhero information
+    def get_info(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Gender:", self.gender)
+        print("Super Power:", self.super_power)
+        print("Weapon:", self.weapon)
+        print("Leader:", "Yes" if self.leader else "No")
+        print("-" * 30)
+
+    # Method to check if superhero is leader
+    def is_leader(self):
+        if self.leader:
+            return f"{self.name} is a leader of the Avengers."
+        else:
+            return f"{self.name} is not a leader of the Avengers."
+
+
+# Creating Avengers objects
+captain_america = Avenger("Captain America", 100, "Male",
+                          "Super Strength", "Shield", True)
+
+iron_man = Avenger("Iron Man", 48, "Male",
+                   "Technology", "Armor")
+
+black_widow = Avenger("Black Widow", 35, "Female",
+                      "Superhuman", "Batons")
+
+hulk = Avenger("Hulk", 45, "Male",
+               "Unlimited Strength", "No Weapon")
+
+thor = Avenger("Thor", 1500, "Male",
+               "Super Energy", "Mjölnir")
+
+hawkeye = Avenger("Hawkeye", 38, "Male",
+                  "Fighting Skills", "Bow and Arrows")
+
+
+# Display information
+captain_america.get_info()
+iron_man.get_info()
+black_widow.get_info()
+hulk.get_info()
+thor.get_info()
+hawkeye.get_info()
+
+# Check leader
+print(captain_america.is_leader())
+print(iron_man.is_leader())
