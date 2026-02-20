@@ -1,0 +1,12 @@
+# Given values
+distance = 490          # in meters
+time_minutes = 7        # in minutes
+
+# Convert time to seconds
+time_seconds = time_minutes * 60
+
+# Calculate speed
+speed = distance / time_seconds
+
+# Print speed without decimal point
+print("Speed in meters per second:", int(speed))
