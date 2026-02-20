@@ -1,0 +1,9 @@
+# Function that formats the number using the given format type
+def format_value(number, fmt):
+    return format(number, fmt)
+
+# Given arguments
+result = format_value(145, 'o')
+
+# Print the result
+print("Formatted result:", result)
